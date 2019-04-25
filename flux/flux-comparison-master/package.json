@@ -1,0 +1,33 @@
+{
+  "name": "flux-comparison",
+  "version": "0.1.0",
+  "description": "Practical comparison of different Flux solutions",
+  "scripts": {
+    "lint": "eslint ."
+  },
+  "keywords": [
+    "react",
+    "flux",
+    "redux"
+  ],
+  "author": "Dmitri Voronianski <dmitri.voronianski@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "es5-shim": "^4.1.13",
+    "object-assign": "^4.0.1",
+    "react": "^0.13.3"
+  },
+  "devDependencies": {
+    "babel": "^5.8.23",
+    "babel-runtime": "^5.8.3",
+    "babelify": "^6.3.0",
+    "browserify": "^11.2.0",
+    "envify": "^3.2.0",
+    "eslint": "^1.5.1",
+    "eslint-plugin-react": "^3.6.2",
+    "reactify": "^1.1.1",
+    "uglify-js": "^2.4.16",
+    "util-deprecate": "^1.0.1",
+    "watchify": "^3.4.0"
+  }
+}

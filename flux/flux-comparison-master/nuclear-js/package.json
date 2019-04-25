@@ -1,0 +1,17 @@
+{
+  "main": "js/app.js",
+  "scripts": {
+    "start": "../node_modules/.bin/watchify . -o build/bundle.js -v -d",
+    "build": "../node_modules/.bin/browserify js/app.js > build/bundle.js"
+  },
+  "browserify": {
+    "transform": [
+      "babelify",
+      "envify"
+    ]
+  },
+  "dependencies": {
+    "nuclear-js": "^1.0.5",
+    "keymirror": "^0.1.1"
+  }
+}

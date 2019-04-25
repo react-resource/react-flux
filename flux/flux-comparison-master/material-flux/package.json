@@ -1,0 +1,24 @@
+{
+  "main": "js/app.js",
+  "scripts": {
+    "start": "../node_modules/.bin/watchify . -o build/bundle.js -v -d",
+    "build": "../node_modules/.bin/browserify js/app.js > build/bundle.js"
+  },
+  "browserify": {
+    "transform": [
+      [
+        "babelify",
+        {
+          "stage": 1,
+          "optional": [
+            "runtime"
+          ]
+        }
+      ],
+      "envify"
+    ]
+  },
+  "dependencies": {
+    "material-flux": "^1.1.1"
+  }
+}

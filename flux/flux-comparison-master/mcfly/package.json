@@ -1,0 +1,16 @@
+{
+  "main": "js/app.js",
+  "scripts": {
+    "start": "../node_modules/.bin/watchify . -o build/bundle.js -v -d",
+    "build": "../node_modules/.bin/browserify js/app.js > build/bundle.js"
+  },
+  "browserify": {
+    "transform": [
+      "reactify",
+      "envify"
+    ]
+  },
+  "dependencies": {
+    "mcfly": "0.0.9"
+  }
+}
